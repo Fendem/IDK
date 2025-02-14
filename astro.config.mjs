@@ -5,12 +5,12 @@ import react from '@astrojs/react'
 import clerk from '@clerk/astro'
 import tailwind from '@astrojs/tailwind';
 
+import vercel from '@astrojs/vercel';
+
 export default defineConfig({
   integrations: [react(), clerk(), tailwind({
     applyBaseStyles: false,
   })],
   output: "server",
-  adapter: node({
-    mode: 'standalone',
-  }),
+  adapter: vercel(),
 });
