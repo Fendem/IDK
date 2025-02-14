@@ -1,6 +1,7 @@
+/* empty css                                 */
 import { c as createComponent, b as createAstro, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from "../chunks/astro/server_CQ7_pCDq.mjs";
 import "kleur/colors";
-import { $ as $$Layout, M as MyChart } from "../chunks/chart_Me7awe2H.mjs";
+import { $ as $$Layout, M as MyChart } from "../chunks/chart_BUpk4vAq.mjs";
 import { renderers } from "../renderers.mjs";
 const $$Astro = createAstro();
 const $$Index = createComponent(($$result, $$props, $$slots) => {

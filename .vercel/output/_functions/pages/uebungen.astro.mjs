@@ -1,3 +1,4 @@
+/* empty css                                 */
 import { c as createComponent, b as createAstro, r as renderTemplate, e as addAttribute, f as renderScript, g as renderHead, h as renderSlot, a as renderComponent, m as maybeRenderHead } from "../chunks/astro/server_CQ7_pCDq.mjs";
 import "kleur/colors";
 import { jsx, jsxs } from "react/jsx-runtime";
