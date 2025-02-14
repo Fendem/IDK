@@ -1,0 +1,60 @@
+---
+import {Sidebar} from "@/app/layout";
+import CreateLayout from "@/layouts/CreateLayout.astro";
+
+---
+<CreateLayout>
+    <Sidebar client:load>
+        
+<header>
+    <!-- Hero Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-8 md:py-20">
+      <!-- Component -->
+      <div class="grid items-center justify-items-start gap-8 sm:gap-16 md:grid-cols-2">
+        <!-- Hero Content -->
+        <div class="flex flex-col">
+          <!-- Hero Divider -->
+          <div class="mb-4 flex items-center">
+            <div class="mr-4 w-10 border-t border-black"></div>
+            <p class="text-sm font-medium sm:text-base">
+              500+ Components
+            </p>
+          </div>
+          <!-- Hero Title -->
+          <h1 class="mb-4 text-4xl font-bold md:text-6xl md:leading-tight">
+            The Website You Want Without The Dev Time.
+          </h1>
+          <p class="mb-6 max-w-lg text-sm text-gray-500 sm:text-xl md:mb-10 lg:mb-12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+            aliquam, purus sit amet luctus venenatis, lectus
+          </p>
+
+          <!-- Form -->
+          <form name="email-form" method="get" class="flex items-center relative mb-5 w-full md:mb-8 lg:mb-10 max-w-md rounded-md border border-solid border-black px-1 focus-within:outline focus-within:outline-2">
+            <input type="email" class="flex-1 h-9 w-full px-3 py-6 text-sm text-black placeholder:text-black focus:outline-none" placeholder="Enter your email" required="" />
+            <input type="submit" value="Subscribe" class="relative w-auto cursor-pointer rounded-md bg-black px-6 py-2 text-center font-semibold text-white" />
+          </form>
+          <!-- Hero Info -->
+          <div class="flex justify-between sm:justify-start sm:gap-8 lg:gap-12">
+            <div class="flex items-center">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" class="mr-1 inline-block sm:mr-2" />
+              <p class="text-sm">Customers</p>
+            </div>
+            <div class="flex items-center">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" class="mr-1 inline-block sm:mr-2" />
+              <p class="text-sm">24/7 Support</p>
+            </div>
+            <div class="flex items-center">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" class="mr-1 inline-block sm:mr-2" />
+              <p class="text-sm">Cloud-based</p>
+            </div>
+          </div>
+        </div>
+        <!-- Hero Image -->
+        <img src="https://firebasestorage.googleapis.com/v0/b/flowspark-1f3e0.appspot.com/o/Tailspark%20Images%2FPlaceholder%20Image.svg?alt=media&token=375a1ea3-a8b6-4d63-b975-aac8d0174074" alt="" class="inline-block h-full w-full max-w-2xl" />
+      </div>
+    </div>
+  </header>
+  
+    </Sidebar> 
+</CreateLayout>
