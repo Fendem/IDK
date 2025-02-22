@@ -1,12 +1,11 @@
 // astro.config.mjs
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react'
-import clerk from '@clerk/astro'
+import react from '@astrojs/react';
+import clerk from '@clerk/astro';
 import tailwind from '@astrojs/tailwind';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  integrations: [react(), clerk(), tailwind(), vercel()], // <-- Vercel here...
-  output: "server",
-  adapter: vercel(), // ...and here again.
+  integrations: [react(), clerk(), tailwind()],
+  adapter: vercel(),
 });
