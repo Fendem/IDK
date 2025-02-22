@@ -1,1 +1,0 @@
-import{B as t}from"./BaseClerkControlElement.C8tIaxfh.js";import"./chunk-BWZJPRGU.B86UttwQ.js";class s extends t{onAuthStateChange(e){e.userId?this.setAttribute("hidden",""):this.removeAttribute("hidden")}}customElements.define("clerk-signed-out",s);
