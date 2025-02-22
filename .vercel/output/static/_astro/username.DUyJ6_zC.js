@@ -1,1 +1,0 @@
-import{j as s}from"./jsx-runtime.D_zvdyIk.js";import{u as t}from"./index.RGxeCTNx.js";import{$ as o}from"./chunk-BWZJPRGU.BC2rkRlB.js";import"./index.FkReswY5.js";function p(){const r=t(o),e=r?.username?r.username.charAt(0).toUpperCase()+r.username.slice(1):"";return s.jsx("span",{className:"",children:e})}export{p as Username};

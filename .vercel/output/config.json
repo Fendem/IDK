@@ -24,15 +24,11 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^/auth/signin/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^/auth/signup/?$",
-			"dest": "_render"
-		},
-		{
 			"src": "^/uebungen/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/$",
 			"dest": "_render"
 		},
 		{

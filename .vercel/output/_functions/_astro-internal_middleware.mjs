@@ -408,14 +408,14 @@ var handleControlFlowErrors = (e, clerkRequest, requestState, context) => {
 const onRequest$1 = clerkMiddleware((auth, context) => {
   const { userId } = auth();
   const url = new URL(context.request.url);
-  if (url.pathname === "https://schreibrecht-test.vercel.app/" && userId) {
+  if (url.pathname === "/" && userId) {
     return new Response(null, {
       status: 302,
       // Redirect status
       headers: { Location: "/uebungen" }
     });
   }
-  if (url.pathname.startsWith("https://schreibrecht-test.vercel.app/uebungen") && !userId) {
+  if (url.pathname.startsWith("/uebungen") && !userId) {
     return new Response(null, {
       status: 302,
       // Redirect status
