@@ -6,11 +6,7 @@ import tailwind from '@astrojs/tailwind';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  integrations: [react(), clerk({
-    appearance: {
-      signIn: { },
-    },
-  }), tailwind()],
+  integrations: [react(), clerk(), tailwind(), vercel()],
   output: "server",
   adapter: vercel(),
 });
