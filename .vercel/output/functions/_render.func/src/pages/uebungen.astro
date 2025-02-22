@@ -1,0 +1,26 @@
+---
+import { Sidebar } from "@/app/layout";
+import CreateLayout from "@/layouts/CreateLayout.astro";
+import blue_parrot from "@/assets/blue-parrot-logo.png";
+import {Username} from "@/components/username"
+import { Image } from "astro:assets";
+---
+<CreateLayout>
+  <Sidebar client:load>
+    <header>
+      <input id="middleNameInput" type="text" placeholder="Enter Middle Name" />
+      <button onclick="saveMiddleName()">Save</button>
+      <p id="middleNameDisplay">Your middle name: <span>-</span></p>
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-8 md:py-20">
+        <div class="grid items-center justify-items-start gap-8 sm:gap-0 md:grid-cols-2">
+          <div class="flex flex-col text-center">
+            <h1 class="mb-4 text-4xl font-bold md:text-6xl md:leading-tight">
+              Willkomen Zu <span class="main font-bold">SchreibRecht! <Username client:idle/></span>
+            </h1>
+          </div>
+          <Image src={blue_parrot} alt="parrot" class="inline-block h-full w-full max-w-md"/>
+        </div>
+      </div>
+    </header>
+  </Sidebar> 
+</CreateLayout>
