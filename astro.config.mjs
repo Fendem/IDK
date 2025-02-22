@@ -11,6 +11,6 @@ export default defineConfig({
       signIn: { },
     },
   }), tailwind()],
-  output: "static",
+  output: "server",
   adapter: vercel(),
 });

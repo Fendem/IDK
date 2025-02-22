@@ -12,8 +12,32 @@
 			"continue": true
 		},
 		{
+			"src": "^/_server-islands/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/_image/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/404/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/auth/signin/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/auth/signup/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/uebungen/?$",
+			"dest": "_render"
+		},
+		{
 			"src": "^/.*$",
-			"dest": "/404.html",
+			"dest": "_render",
 			"status": 404
 		}
 	]
