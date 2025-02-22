@@ -11,7 +11,7 @@ export default {
     			moredark: '#222221',
     			up: '#FF801F',
     			live: '#E54D2E',
-    			secondary: '#FFCA00',
+    			secondary: '#27B08B',
     			background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
     			card: {

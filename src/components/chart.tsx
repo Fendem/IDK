@@ -13,12 +13,12 @@ import {
 } from "@/components/ui/chart"
 
 const initialChartData = [
-  { date: "2024-04-16", Lesen: 138, Schreiben: 190 },
-  { date: "2024-04-17", Lesen: 446, Schreiben: 360 },
-  { date: "2024-04-18", Lesen: 364, Schreiben: 410 },
-  { date: "2024-04-19", Lesen: 243, Schreiben: 180 },
-  { date: "2024-04-20", Lesen: 89, Schreiben: 150 },
-  { date: "2024-04-18", Lesen: 364, Schreiben: 410 },
+  { date: "2024-04-16", Lesen: Math.random() * 700 + 100 + 10, Schreiben: Math.random() * 700 + 100 + 10 },
+  { date: "2024-04-17", Lesen: Math.random() * 700 + 100 + 10, Schreiben: Math.random() * 700 + 100 + 10 },
+  { date: "2024-04-18", Lesen: Math.random() * 700 + 100 + 10, Schreiben: Math.random() * 700 + 100 + 10 },
+  { date: "2024-04-19", Lesen: Math.random() * 700 + 100 + 10, Schreiben: Math.random() * 700 + 100 + 10 },
+  { date: "2024-04-20", Lesen: Math.random() * 700 + 100 + 10, Schreiben: Math.random() * 700 + 100 + 10 },
+  { date: "2024-04-18", Lesen: Math.random() * 700 + 100 + 10, Schreiben: Math.random() * 700 + 100 + 10 },
   
 ];
 

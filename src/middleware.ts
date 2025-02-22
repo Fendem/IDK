@@ -15,8 +15,8 @@ export const onRequest = clerkMiddleware((auth, context) => {
   // If user is not logged in and tries to access /uebungen, redirect to /404
   if (url.pathname.startsWith('/uebungen') && !userId) {
     return new Response(null, {
-      status: 302, // Redirect status code
-      headers: { Location: '/' }
+      status: 302, // Redirect status
+      headers: { Location: '/auth/signin' },
     });
   }
 });
