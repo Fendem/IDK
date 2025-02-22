@@ -36,10 +36,6 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^/$",
-			"dest": "_render"
-		},
-		{
 			"src": "^/.*$",
 			"dest": "_render",
 			"status": 404
