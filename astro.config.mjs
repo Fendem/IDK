@@ -1,4 +1,3 @@
-// astro.config.mjs
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import clerk from '@clerk/astro';
@@ -7,5 +6,6 @@ import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   integrations: [react(), clerk(), tailwind()],
+  output: "server",  // 👈 Go back to server mode
   adapter: vercel(),
 });

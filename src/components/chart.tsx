@@ -42,18 +42,18 @@ export function MyChart() {
 
   // Interval zum Aktualisieren der Werte (alle Sekunde)
   React.useEffect(() => {
-    const interval = setInterval(() => {
+    const interval = 
       setChartData((prevData) =>
-        prevData.map((item) => ({
+        (prevData.map((item) => ({
           ...item,
           Lesen: item.Lesen = Math.random() * 500 + 100 + 10,
           Schreiben: item.Schreiben = Math.random() * 500 + 100 + 10,
-        }))
+        })))
       )
-    }, 1500)
+    
 
     // Cleanup-Funktion, um das Interval zu löschen, wenn die Komponente unmontiert wird
-    return () => clearInterval(interval)
+    return () => interval
   }, [])
 
   const filteredData = chartData.filter((item) => {

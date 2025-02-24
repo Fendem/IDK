@@ -24,7 +24,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
     <SidebarProvider>
       <AppSidebar/>
       <main className="p-1">
-        <div className="hover:bg-sidebar-border rounded-md">
+        <div className="hover:bg-sidebar-border rounded-md fixed">
           <SidebarTrigger />
         </div>
       </main>

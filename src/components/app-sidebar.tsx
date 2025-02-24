@@ -138,8 +138,6 @@ export function AppSidebar() {
     return <div>Not signed in</div>
   }
 
-  console.log(<UserProfile />)
-
   return (
     
     <Sidebar variant="floating" collapsible="icon">
@@ -253,18 +251,13 @@ export function AppSidebar() {
             <SidebarMenuItem>
               <DropdownMenu>
               <SidebarMenuButton size="lg" className="relative flex items-center overflow-visible mx-auto">
-              <SubBadge /> 
                 <ClerkProvider publishableKey="pk_test_Zml0LXNraW5rLTk2LmNsZXJrLmFjY291bnRzLmRldiQ" afterSignOutUrl="/">
                   <UserButton />
                 </ClerkProvider>
                 <div className="font-bold group-hover:text-blue-600 transition-all flex justify-between w-full">
                   <div className="text-center group-data-[collapsible=icon]:hidden">{currentUser?.username}</div>
                 </div>
-                
-                {/* Das Badge bleibt immer sichtbar */}
-                <div className="group-data-[collapsible=icon]:relative group-data-[collapsible=icon]:mx-auto group-data-[collapsible=icon]:block">
-                  <SubBadge />
-                </div>
+              
               </SidebarMenuButton>
                 
                 <DropdownMenuContent
